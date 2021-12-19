@@ -1,0 +1,15 @@
+/home/victor/Documents/Alura/CSharpAluraTres/bin/Debug/net6.0/CSharpAluraTres
+/home/victor/Documents/Alura/CSharpAluraTres/bin/Debug/net6.0/CSharpAluraTres.deps.json
+/home/victor/Documents/Alura/CSharpAluraTres/bin/Debug/net6.0/CSharpAluraTres.runtimeconfig.json
+/home/victor/Documents/Alura/CSharpAluraTres/bin/Debug/net6.0/CSharpAluraTres.dll
+/home/victor/Documents/Alura/CSharpAluraTres/bin/Debug/net6.0/ref/CSharpAluraTres.dll
+/home/victor/Documents/Alura/CSharpAluraTres/bin/Debug/net6.0/CSharpAluraTres.pdb
+/home/victor/Documents/Alura/CSharpAluraTres/obj/Debug/net6.0/CSharpAluraTres.csproj.AssemblyReference.cache
+/home/victor/Documents/Alura/CSharpAluraTres/obj/Debug/net6.0/CSharpAluraTres.GeneratedMSBuildEditorConfig.editorconfig
+/home/victor/Documents/Alura/CSharpAluraTres/obj/Debug/net6.0/CSharpAluraTres.AssemblyInfoInputs.cache
+/home/victor/Documents/Alura/CSharpAluraTres/obj/Debug/net6.0/CSharpAluraTres.AssemblyInfo.cs
+/home/victor/Documents/Alura/CSharpAluraTres/obj/Debug/net6.0/CSharpAluraTres.csproj.CoreCompileInputs.cache
+/home/victor/Documents/Alura/CSharpAluraTres/obj/Debug/net6.0/CSharpAluraTres.dll
+/home/victor/Documents/Alura/CSharpAluraTres/obj/Debug/net6.0/ref/CSharpAluraTres.dll
+/home/victor/Documents/Alura/CSharpAluraTres/obj/Debug/net6.0/CSharpAluraTres.pdb
+/home/victor/Documents/Alura/CSharpAluraTres/obj/Debug/net6.0/CSharpAluraTres.genruntimeconfig.cache
