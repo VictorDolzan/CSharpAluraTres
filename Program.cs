@@ -15,18 +15,20 @@ namespace CSharpAluraTresByteBank
         {
             GerenciadorBonificacao gerenciadorBonif = new GerenciadorBonificacao();
 
-            Funcionario carlos = new Funcionario();
+            Funcionario carlos = new Funcionario("546.879.157-20");
 
-            carlos.NomeFunc = "Carlos";
-            carlos.CPFFunc = "546.879.157-20";
+            carlos.NomeFunc = "Carlos";            
             carlos.SalarioFunc = 2000;
+
+            Console.WriteLine("O Total de Funcionários é: " + Funcionario.TotalDeFuncionarios);
 
             gerenciadorBonif.Registrar(carlos);
 
-            Diretor roberta = new Diretor();
+            Diretor roberta = new Diretor("454.658.148-3");
             roberta.NomeFunc = "Roberta";
-            roberta.CPFFunc = "454.658.148-3";
             roberta.SalarioFunc = 5000;
+
+            Console.WriteLine("O Total de Funcionários é: " + Funcionario.TotalDeFuncionarios);
 
             Funcionario robertaTeste = roberta;
 

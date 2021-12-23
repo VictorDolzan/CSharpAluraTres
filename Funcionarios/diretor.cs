@@ -9,9 +9,13 @@ namespace CSharpAluraTresByteBank.Funcionarios
 {
     public class Diretor : Funcionario
     {
-        public override double GetBonificacao()
+        public Diretor(string cpf) : base(cpf)
         {
-          return SalarioFunc;
+          Console.WriteLine("Criando DIRETOR");
+        }
+        public override double GetBonificacao()
+        {         
+          return SalarioFunc + base.GetBonificacao();
         } 
     }
 }
