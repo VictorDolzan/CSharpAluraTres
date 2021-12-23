@@ -28,6 +28,11 @@ namespace CSharpAluraTresByteBank
             roberta.CPFFunc = "454.658.148-3";
             roberta.SalarioFunc = 5000;
 
+            Funcionario robertaTeste = roberta;
+
+            Console.WriteLine("Bonificação de uma referência de Diretor: " + roberta.GetBonificacao());
+            Console.WriteLine("Bonificação de uma referência de Funcionario: " + robertaTeste.GetBonificacao());
+
             gerenciadorBonif.Registrar(roberta);
 
 

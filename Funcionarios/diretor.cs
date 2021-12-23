@@ -7,12 +7,9 @@ using System.Globalization;
 
 namespace CSharpAluraTresByteBank.Funcionarios
 {
-    public class Diretor 
+    public class Diretor : Funcionario
     {
-        public string NomeFunc { get; set; }
-        public string CPFFunc { get; set; }
-        public double SalarioFunc { get; set; }
-        public double GetBonificacao()
+        public override double GetBonificacao()
         {
           return SalarioFunc;
         } 

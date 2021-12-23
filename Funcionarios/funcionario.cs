@@ -12,7 +12,7 @@ namespace CSharpAluraTresByteBank.Funcionarios
         public string NomeFunc { get; set; }
         public string CPFFunc { get; set; }
         public double SalarioFunc { get; set; }
-        public double GetBonificacao()
+        public virtual double GetBonificacao()
         {
           return SalarioFunc * 0.10;
         }
