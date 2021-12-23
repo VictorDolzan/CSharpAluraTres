@@ -15,27 +15,44 @@ namespace CSharpAluraTresByteBank
         {
             GerenciadorBonificacao gerenciadorBonif = new GerenciadorBonificacao();
 
-            Funcionario carlos = new Funcionario("546.879.157-20");
-
+            Funcionario carlos = new Funcionario(2000, "546.879.157-20");
             carlos.NomeFunc = "Carlos";            
-            carlos.SalarioFunc = 2000;
+            
+
+            carlos.AumentarSalario();
+            Console.WriteLine("Novo salário do carlos " + carlos.SalarioFunc);
 
             Console.WriteLine("O Total de Funcionários é: " + Funcionario.TotalDeFuncionarios);
 
             gerenciadorBonif.Registrar(carlos);
 
-            Diretor roberta = new Diretor("454.658.148-3");
-            roberta.NomeFunc = "Roberta";
-            roberta.SalarioFunc = 5000;
+            Diretor roberta = new Diretor(5000, "454.658.148-3");
+            roberta.NomeFunc = "Roberta";            
+
+            roberta.AumentarSalario();
+            Console.WriteLine("Novo salário de Roberta: " + roberta.SalarioFunc);
+           
+            Console.WriteLine("O Total de Funcionários é: " + Funcionario.TotalDeFuncionarios);
+
+            gerenciadorBonif.Registrar(roberta);
+
+            Gerente pedro = new Gerente(4000, "149.600.547-36");
+            pedro.NomeFunc = "Pedro";
+            ;
+
+            pedro.AumentarSalario();
+            Console.WriteLine("O Novo salário do Pedro é: " + pedro.SalarioFunc);
 
             Console.WriteLine("O Total de Funcionários é: " + Funcionario.TotalDeFuncionarios);
+
+            gerenciadorBonif.Registrar(pedro);
 
             Funcionario robertaTeste = roberta;
 
             Console.WriteLine("Bonificação de uma referência de Diretor: " + roberta.GetBonificacao());
             Console.WriteLine("Bonificação de uma referência de Funcionario: " + robertaTeste.GetBonificacao());
-
-            gerenciadorBonif.Registrar(roberta);
+            Console.WriteLine("Bonificação de uma referência de Gerente: " + pedro.GetBonificacao());
+            
 
 
             Console.WriteLine(carlos.NomeFunc);
@@ -43,6 +60,9 @@ namespace CSharpAluraTresByteBank
 
             Console.WriteLine(roberta.NomeFunc);
             Console.WriteLine(roberta.GetBonificacao());
+
+            Console.WriteLine(pedro.NomeFunc);
+            Console.WriteLine(pedro.GetBonificacao());
 
             Console.WriteLine("Total de bonificações: "+ gerenciadorBonif.GetTotalBonificacao());
         }

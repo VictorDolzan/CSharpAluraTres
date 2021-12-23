@@ -7,20 +7,19 @@ using System.Globalization;
 
 namespace CSharpAluraTresByteBank.Funcionarios
 {
-    public class Diretor : Funcionario
+    public class Gerente : Funcionario
     {
-        public Diretor(double salario, string cpf) : base(salario, cpf)
+        public Gerente(double salario, string cpf) : base(salario, cpf)
         {
-          Console.WriteLine("Criando DIRETOR");
+            Console.WriteLine("Criando GERENTE");
         }
-
         public override void AumentarSalario()
         {
-            SalarioFunc *= 1.15;
+            SalarioFunc *= 1.13;
         }
         public override double GetBonificacao()
-        {         
-          return SalarioFunc + base.GetBonificacao();
-        } 
+        {
+            return SalarioFunc * 0.20;
+        }
     }
 }
