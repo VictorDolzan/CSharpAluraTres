@@ -7,7 +7,7 @@ using System.Globalization;
 
 namespace CSharpAluraTresByteBank.Funcionarios
 {
-    public class Funcionario
+    public abstract class Funcionario
     {
         public static int TotalDeFuncionarios { get; private set; }
         public string NomeFunc { get; set; }
