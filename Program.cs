@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Text;
 using System.Globalization;
 using CSharpAluraTresByteBank.Funcionarios;
+using CSharpAluraTresByteBank.Sistemas;
 
 
 namespace CSharpAluraTresByteBank
@@ -65,10 +66,23 @@ namespace CSharpAluraTresByteBank
 
 
             // Console.WriteLine("Total de bonificações: "+ gerenciadorBonif.GetTotalBonificacao());
-            CalcularBonificacao();
-            
+            //CalcularBonificacao();  
+
+            UsarSistema();         
+
         }
 
+        public static void UsarSistema()
+        {
+            SistemaInterno sistemaInterno = new SistemaInterno();
+
+            Diretor roberta = new Diretor("159.753.398-04");
+            roberta.NomeFunc = "Roberta";
+            roberta.SenhaDiretor = "123";
+
+            sistemaInterno.Logar(roberta, "123");
+            sistemaInterno.Logar(roberta, "abc");
+        }
         public static void CalcularBonificacao()
         {
             GerenciadorBonificacao gerenciadorBonificacao = new GerenciadorBonificacao();
@@ -92,7 +106,7 @@ namespace CSharpAluraTresByteBank
 
 
             Console.WriteLine("Total de bonificações do mês: " +
-            gerenciadorBonificacao.GetTotalBonificacao());
+            gerenciadorBonificacao.GetTotalBonificacao());                   
 
         }
     }

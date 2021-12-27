@@ -9,9 +9,14 @@ namespace CSharpAluraTresByteBank.Funcionarios
 {
     public class Diretor : Funcionario
     {
+        public string SenhaDiretor { get; set; }
         public Diretor(string cpf) : base(5000, cpf)
         {
-          
+        
+        }
+        public bool Autenticar(string senha)
+        {
+            return this.SenhaDiretor == senha;           
         }
 
         public override void AumentarSalario()

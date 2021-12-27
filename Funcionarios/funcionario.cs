@@ -21,15 +21,8 @@ namespace CSharpAluraTresByteBank.Funcionarios
           SalarioFunc = salario;
           TotalDeFuncionarios ++;
         }
-        public virtual void AumentarSalario()
-        {
-            // SalarioFunc = SalarioFunc + (SalarioFunc * 0.1);
-            // SalarioFunc = SalarioFunc * 1.1;
-            SalarioFunc *= 1.1;
-        }
-        public virtual double GetBonificacao()
-        {
-          return SalarioFunc * 0.10;
-        }
+        public abstract void AumentarSalario();       
+        public abstract double GetBonificacao();         
+        
     }
 }
