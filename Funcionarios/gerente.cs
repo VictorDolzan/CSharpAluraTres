@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Text;
 using System.Globalization;
+using CSharpAluraTresByteBank.Sistemas;
 
 namespace CSharpAluraTresByteBank.Funcionarios
 {
-    public class Gerente : Funcionario
+    public class Gerente : Autenticavel
     {
         public Gerente(string cpf) : base(4000, cpf)
         {

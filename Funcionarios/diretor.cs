@@ -4,21 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Text;
 using System.Globalization;
+using CSharpAluraTresByteBank.Sistemas;
 
 namespace CSharpAluraTresByteBank.Funcionarios
 {
-    public class Diretor : Funcionario
+    public class Diretor : Autenticavel
     {
-        public string SenhaDiretor { get; set; }
+        
         public Diretor(string cpf) : base(5000, cpf)
         {
         
-        }
-        public bool Autenticar(string senha)
-        {
-            return this.SenhaDiretor == senha;           
-        }
-
+        }      
         public override void AumentarSalario()
         {
             SalarioFunc *= 1.15;

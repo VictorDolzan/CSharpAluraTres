@@ -78,10 +78,16 @@ namespace CSharpAluraTresByteBank
 
             Diretor roberta = new Diretor("159.753.398-04");
             roberta.NomeFunc = "Roberta";
-            roberta.SenhaDiretor = "123";
+            roberta.SenhaFunc = "123";
+
+            Gerente camila = new Gerente("326.985.658-89");
+            camila.NomeFunc = "Camila";
+            camila.SenhaFunc = "abc";
 
             sistemaInterno.Logar(roberta, "123");
-            sistemaInterno.Logar(roberta, "abc");
+            sistemaInterno.Logar(camila, "abc");
+
+
         }
         public static void CalcularBonificacao()
         {
@@ -96,13 +102,17 @@ namespace CSharpAluraTresByteBank
             Funcionario igor = new Auxiliar("981.198.778-53");
             igor.NomeFunc = "Igor";
 
-            Funcionario Victor = new Gerente("149.600.547-35");
-            Victor.NomeFunc = "Victor"; 
+            Funcionario victor = new Gerente("149.600.547-35");
+            victor.NomeFunc = "Victor";
+
+            Funcionario jasmin = new Desenvolvedor("145.633.568-35");
+            jasmin.NomeFunc = "Jasmin";
 
             gerenciadorBonificacao.Registrar(pedro);
             gerenciadorBonificacao.Registrar(roberta);
             gerenciadorBonificacao.Registrar(igor);
-            gerenciadorBonificacao.Registrar(Victor);
+            gerenciadorBonificacao.Registrar(victor);
+            gerenciadorBonificacao.Registrar(jasmin);
 
 
             Console.WriteLine("Total de bonificações do mês: " +

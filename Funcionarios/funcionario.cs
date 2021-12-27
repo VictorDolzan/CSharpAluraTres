@@ -12,7 +12,7 @@ namespace CSharpAluraTresByteBank.Funcionarios
         public static int TotalDeFuncionarios { get; private set; }
         public string NomeFunc { get; set; }
         public string CPFFunc { get; private set; }
-        public double SalarioFunc { get; protected set; }
+        public double SalarioFunc { get; protected set; }      
 
         public Funcionario( double salario, string cpf)
         {
@@ -20,7 +20,7 @@ namespace CSharpAluraTresByteBank.Funcionarios
           CPFFunc = cpf;
           SalarioFunc = salario;
           TotalDeFuncionarios ++;
-        }
+        }       
         public abstract void AumentarSalario();       
         public abstract double GetBonificacao();         
         

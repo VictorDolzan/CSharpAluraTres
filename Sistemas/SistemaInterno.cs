@@ -11,7 +11,7 @@ namespace CSharpAluraTresByteBank.Sistemas
 {
     public class SistemaInterno
     {
-        public bool Logar(Diretor funcionario, string senha)
+        public bool Logar(Autenticavel funcionario, string senha)
         {
             bool usuarioAutenticado = funcionario.Autenticar(senha);
 
