@@ -8,7 +8,7 @@ using CSharpAluraTresByteBank.Sistemas;
 
 namespace CSharpAluraTresByteBank.Funcionarios
 {
-    public class Gerente : Autenticavel
+    public class Gerente : FuncionarioAutenticavel
     {
         public Gerente(string cpf) : base(4000, cpf)
         {

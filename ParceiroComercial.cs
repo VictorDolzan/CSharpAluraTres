@@ -5,18 +5,14 @@ using System.Threading.Tasks;
 using System.Text;
 using System.Globalization;
 using CSharpAluraTresByteBank.Funcionarios;
+using CSharpAluraTresByteBank.Sistemas;
 
 
-namespace CSharpAluraTresByteBank.Sistemas
+namespace CSharpAluraTresByteBank
 {
-    public abstract class Autenticavel : Funcionario
+    public class ParceiroComercial : IAutenticavel
     {
         public string SenhaFunc { get; set; }
-
-        protected Autenticavel(double salario, string cpf) : base(salario, cpf)
-        {
-
-        }
         public bool Autenticar(string senha)
         {
             return SenhaFunc == senha;

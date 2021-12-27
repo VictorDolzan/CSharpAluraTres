@@ -8,13 +8,13 @@ using CSharpAluraTresByteBank.Sistemas;
 
 namespace CSharpAluraTresByteBank.Funcionarios
 {
-    public class Diretor : Autenticavel
+    public class Diretor : FuncionarioAutenticavel
     {
         
         public Diretor(string cpf) : base(5000, cpf)
         {
         
-        }      
+        }   
         public override void AumentarSalario()
         {
             SalarioFunc *= 1.15;

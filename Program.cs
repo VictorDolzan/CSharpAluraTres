@@ -84,6 +84,10 @@ namespace CSharpAluraTresByteBank
             camila.NomeFunc = "Camila";
             camila.SenhaFunc = "abc";
 
+            ParceiroComercial parceiro = new ParceiroComercial();
+            parceiro.SenhaFunc = "123456";
+
+            sistemaInterno.Logar(parceiro, "123456");
             sistemaInterno.Logar(roberta, "123");
             sistemaInterno.Logar(camila, "abc");
 
